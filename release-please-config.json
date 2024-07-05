@@ -1,0 +1,9 @@
+{
+  "release-type": "node",
+  "repo-url": "https://github.com/iczp/it-tools",
+  "packages": {
+    ".": {
+      "release-type": "node"
+    }
+  }
+}
