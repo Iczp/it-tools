@@ -3,11 +3,11 @@ import { escape, unescape } from 'lodash';
 
 import { useCopy } from '@/composable/copy';
 
-const escapeInput = ref('<title>IT Tool</title>');
+const escapeInput = ref('<title>Dev Tools</title>');
 const escapeOutput = computed(() => escape(escapeInput.value));
 const { copy: copyEscaped } = useCopy({ source: escapeOutput });
 
-const unescapeInput = ref('&lt;title&gt;IT Tool&lt;/title&gt;');
+const unescapeInput = ref('&lt;title&gt;Dev Tools&lt;/title&gt;');
 const unescapeOutput = computed(() => unescape(unescapeInput.value));
 const { copy: copyUnescaped } = useCopy({ source: unescapeOutput });
 </script>
