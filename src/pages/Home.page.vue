@@ -8,7 +8,7 @@ import { config } from '@/config';
 
 const toolStore = useToolStore();
 
-useHead({ title: 'IT Tools - Handy online tools for developers' });
+useHead({ title: 'Dev Tools - Handy online tools for developers' });
 const { t } = useI18n();
 </script>
 
@@ -19,18 +19,18 @@ const { t } = useI18n();
         <ColoredCard :title="$t('home.follow.title')" :icon="Heart">
           {{ $t('home.follow.p1') }}
           <a
-            href="https://github.com/CorentinTh/it-tools"
+            href="https://github.com/iczp/it-tools"
             rel="noopener"
             target="_blank"
             :aria-label="$t('home.follow.githubRepository')"
           >GitHub</a>
           {{ $t('home.follow.p2') }}
-          <a
+          <!-- <a
             href="https://twitter.com/ittoolsdottech"
             rel="noopener"
             target="_blank"
             :aria-label="$t('home.follow.twitterAccount')"
-          >Twitter</a>.
+          >Twitter</a>. -->
           {{ $t('home.follow.thankYou') }}
           <n-icon :component="Heart" />
         </ColoredCard>
