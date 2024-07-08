@@ -11,8 +11,8 @@
   status = 200
 
 [[redirects]]
-  from = "/sitemap.xml"
-  to = "/sitemap.xml"
+  from = "/sitemap.xsl"
+  to = "/sitemap.xsl"
   status = 200
 
 [[redirects]]
