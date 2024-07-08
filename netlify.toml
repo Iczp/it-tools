@@ -4,7 +4,27 @@
 
 [build.environment]
   NODE_OPTIONS = "--max_old_space_size=4096"
-  
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/humans.txt"
+  to = "/humans.txt"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
