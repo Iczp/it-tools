@@ -3,30 +3,29 @@
 #   publish = "dist"
 
 [build.environment]
-  NODE_OPTIONS = "--max_old_space_size=4096"
+NODE_OPTIONS = "--max_old_space_size=4096"
 
 [[redirects]]
-  from = "/sitemap.xml"
-  to = "/sitemap.xml"
-  status = 200
+from = "/*"
+status = 200
+to = "/index.html"
 
 [[redirects]]
-  from = "/sitemap.xsl"
-  to = "/sitemap.xsl"
-  status = 200
+from = "/sitemap.xml"
+status = 200
+to = "/sitemap.xml"
 
 [[redirects]]
-  from = "/robots.txt"
-  to = "/robots.txt"
-  status = 200
+from = "/sitemap.xsl"
+status = 200
+to = "/sitemap.xsl"
 
 [[redirects]]
-  from = "/humans.txt"
-  to = "/humans.txt"
-  status = 200
+from = "/robots.txt"
+status = 200
+to = "/robots.txt"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
+from = "/humans.txt"
+status = 200
+to = "/humans.txt"
