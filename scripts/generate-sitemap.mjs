@@ -19,6 +19,8 @@ async function generateSitemap(hostname) {
 
   // console.log('router:', router);
   const toolUrls = [
+    '/',
+    '/sitemap.xml',
     '/token-generator',
     '/hash-text',
     '/bcrypt',
@@ -105,7 +107,7 @@ async function generateSitemap(hostname) {
   const urls = toolUrls.map((x) => ({ url: x, changefreq: 'daily', priority: 1.0 }));
 
   // 创建一个写入 sitemap 的流
-  const sitemapStream = new SitemapStream({ hostname });
+  const sitemapStream = new SitemapStream({ hostname, xslUrl: '/sitemap.xsl' });
 
   const filePath = path.join(process.cwd(), 'public', 'sitemap.xml');
 
