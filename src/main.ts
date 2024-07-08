@@ -13,6 +13,12 @@ import App from './App.vue';
 import router from './router';
 import { i18nPlugin } from './plugins/i18n.plugin';
 
+// import { tools } from './tools';
+
+// const toolUrls = tools.map((x: any) => `"${x.path}"`).join(',\n');
+
+// console.log(`const toolUrls=[${toolUrls}]`);
+
 registerSW();
 
 const app = createApp(App);

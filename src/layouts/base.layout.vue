@@ -88,6 +88,8 @@ const tools = computed<ToolCategory[]>(() => [
             <c-link target="_blank" rel="noopener" href="https://github.com/iczp"> iczp </c-link>
 
             <c-link target="_blank" rel="noopener" href="https://vvll.net"> vvll.net </c-link>
+
+            <c-link target="_blank" href="/sitemap.xml"> sitemap.xml </c-link>
           </div>
         </div>
       </div>
